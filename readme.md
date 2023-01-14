@@ -28,4 +28,19 @@ Covid data
 2. Install GCP SDK
     - run gcloud init
     - set current project
-    
+
+3. Pub/Sub
+
+    Messaging service. Similar to Kafka. That can be used as middleware for event based ingestion and streaming data loads.
+    - It can automaticaly scale.
+    - Have low latency.
+
+    Main concepts:
+    1. Publisher >>> sends message >>> Topic 
+    2. Subsriber >>> subscribe to >> Topic
+    3. Subscription represents the stream of messages from a specific topic 
+    4. Message (the combination of data and attributes)
+    5. Message attribute (key-value pair that publisher sends can add to a message)
+
+![pub/sub](img/pubsub.png)
+
