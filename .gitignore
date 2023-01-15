@@ -1,4 +1,7 @@
 3.10venv*
+credentials*
+data*
+config.ini
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

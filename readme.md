@@ -42,5 +42,13 @@ Covid data
     4. Message (the combination of data and attributes)
     5. Message attribute (key-value pair that publisher sends can add to a message)
 
-![pub/sub](img/pubsub.png)
+![pub/sub](img/pub_sub_flow.svg)
 
+4. BigQuery
+
+    DataWarehouse that offers batch streaming insertion capabilities and is integrated with Tensorflow.
+    - Higly scalable
+    - Cost-effective
+
+    Data Studio quick visualization on top of Bigquery data
+     
