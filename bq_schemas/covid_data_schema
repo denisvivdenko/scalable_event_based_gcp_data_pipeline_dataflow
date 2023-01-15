@@ -1,0 +1,110 @@
+[
+    {
+        "description": "Case_Type",
+        "mode": "REQUIRED",
+        "name": "Case_Type",
+        "type": "STRING"
+    },
+    {
+        "description": "People_Total_Tested_Count",
+        "mode": "NULLABLE",
+        "name": "People_Total_Tested_Count",
+        "type": "STRING"
+    },
+    {
+        "description": "Cases",
+        "mode": "NULLABLE",
+        "name": "Cases",
+        "type": "STRING"
+    },
+    {
+        "description": "Difference",
+        "mode": "NULLABLE",
+        "name": "Difference",
+        "type": "STRING"
+    },
+    {
+        "description": "Date",
+        "mode": "NULLABLE",
+        "name": "Date",
+        "type": "STRING"
+    },
+    {
+        "description": "Combined_Key",
+        "mode": "NULLABLE",
+        "name": "Combined_Key",
+        "type": "STRING"
+    },
+    {
+        "description": "Country_Region",
+        "mode": "NULLABLE",
+        "name": "Country_Region",
+        "type": "STRING"
+    },
+    {
+        "description": "Province_State",
+        "mode": "NULLABLE",
+        "name": "Province_State",
+        "type": "STRING"
+    },
+    {
+        "description": "Admin2",
+        "mode": "NULLABLE",
+        "name": "Admin2",
+        "type": "STRING"
+    },
+    {
+        "description": "iso2",
+        "mode": "NULLABLE",
+        "name": "iso2",
+        "type": "STRING"
+    },
+    {
+        "description": "iso3",
+        "mode": "NULLABLE",
+        "name": "iso3",
+        "type": "STRING"
+    },
+    {
+        "description": "FIPS",
+        "mode": "NULLABLE",
+        "name": "FIPS",
+        "type": "STRING"
+    },
+    {
+        "description": "Lat",
+        "mode": "NULLABLE",
+        "name": "Lat",
+        "type": "STRING"
+    },
+    {
+        "description": "Long",
+        "mode": "NULLABLE",
+        "name": "Long",
+        "type": "STRING"
+    },
+    {
+        "description": "Population_Count",
+        "mode": "NULLABLE",
+        "name": "Population_Count",
+        "type": "STRING"
+    },
+    {
+        "description": "People_Hospitalized_Cumulative_Count",
+        "mode": "NULLABLE",
+        "name": "People_Hospitalized_Cumulative_Count",
+        "type": "STRING"
+    },
+    {
+        "description": "Data_Source",
+        "mode": "NULLABLE",
+        "name": "Data_Source",
+        "type": "STRING"
+    },
+    {
+        "description": "Prep_Flow_Runtime",
+        "mode": "NULLABLE",
+        "name": "Prep_Flow_Runtime",
+        "type": "STRING"
+    }
+]
