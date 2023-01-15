@@ -1,0 +1,3 @@
+functions:
+  pubsub_2_bq:
+    entrypoint: src.cloud_functions.pubsub_2_bq.pubsub_2_bq
