@@ -5,7 +5,7 @@ import base64
 import io
 
 
-def pubsub_2_bq(event, context):
+def pubsub2bq(event, context):
      """
      Triggered from a message on a Cloud Pub/Sub topic.
      Args:
@@ -19,9 +19,9 @@ def pubsub_2_bq(event, context):
      table = bq_client.get_table(table_ref)
      
      pubsub_message = base64.b64decode(event["data"]).decode("utf-8")
-     print(pubsub_2_bq)
 
      dataframe = pd.read_csv(io.StringIO(pubsub_message))
+     print(dataframe)
      errors = bq_client.insert_rows(table, dataframe.values)
      if errors:
           raise Exception(f"Failed to insert rows to bq. {errors}")
