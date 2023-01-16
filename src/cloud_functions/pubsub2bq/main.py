@@ -22,6 +22,6 @@ def pubsub2bq(event, context):
 
      dataframe = pd.read_csv(io.StringIO(pubsub_message))
      print(dataframe)
-     errors = bq_client.insert_rows(table, dataframe.values)
+     errors = bq_client.insert_rows(table, [tuple(row) for row in dataframe.values])
      if errors:
           raise Exception(f"Failed to insert rows to bq. {errors}")
