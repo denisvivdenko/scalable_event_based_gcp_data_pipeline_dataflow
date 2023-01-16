@@ -35,5 +35,5 @@ if __name__ == "__main__":
     credentials = Credentials.from_service_account_file(credentials_path)
 
     publisher = pubsub_v1.PublisherClient(credentials=credentials)
-    publish_data(publisher=publisher, topic_name=config.get("pubsub", "topic_name"), data_path=config.get("data", "covid_data_path"), max_chunks=5)
+    publish_data(publisher=publisher, topic_name=config.get("pubsub", "topic_name"), data_path=config.get("data", "covid_data_path"), chunksize=1, max_chunks=5)
 
