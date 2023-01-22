@@ -11,19 +11,17 @@ dag = DAG("sftp_dag",
         "owner": "airflow",
         "depends_on_past": False,
         "email_on_failure": False,
-        "email_on_retry": False,
-        "retries": 5,
-        "retry_delay": timedelta(minutes=5)
+        "email_on_retry": False
     }
 )
 
 
 put_file = SFTPOperator(
     task_id="test_sftp",
-    ssh_conn_id="ssh_default",
+    ssh_conn_id="sftp_connection_id",
     local_filepath="/home/airflow/gcs/data/covid_data.csv",
     remote_filepath="/home/denys/covid_data.csv",
-    operation="put",
+    operation="get",
     create_intermediate_dirs=True,
     dag=dag
 )
